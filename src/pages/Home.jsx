@@ -1,4 +1,5 @@
 import React from 'react';
+import { useDispatch } from 'react-redux';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Grid from '@mui/material/Grid';
@@ -36,6 +37,7 @@ export const Home = () => {
               viewsCount={150}
               commentsCount={3}
               tags={['react', 'fun', 'typescript']}
+              isLoading = {true}
               isEditable
             />
           ))}
